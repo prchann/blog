@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  ide:
+    image: squidfunk/mkdocs-material
+    container_name: blog
+    volumes:
+      - ${PWD}:/docs
+    networks:
+      - localhost
+    ports:
+      - "8000:8000/tcp"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: always
+
+networks:
+  localhost:
+    external: true
+

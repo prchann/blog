@@ -1,0 +1,57 @@
+site_name: 陈沛锐
+site_url: "https://www.chenpeirui.com"
+nav:
+  - 主页: index.md
+  - blog/index.md
+  - about.md
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: yellow
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.prune
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+  language: zh
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/git-alt
+    view: material/eye
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+repo_name: prchann/blog
+repo_url: "https://github.com/prchann/blog"
+edit_uri: edit/main/docs/
+extra:
+  homepage: "https://www.chenpeirui.com"
+  social:
+    - name: 微信
+      icon: fontawesome/brands/weixin
+      link: "https://mp.weixin.qq.com/s/0fnpXvvgzwyTIZnKZVW1uw"
+    - name: GitHub
+      icon: fontawesome/brands/github
+      link: "https://github.com/prchann"
+  generator: false
+copyright: "&copy; chenpeirui.com"
